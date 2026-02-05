@@ -11,6 +11,7 @@ with st.sidebar:
 
     st.divider()
     source_url = st.text_input("GitHub Raw URL (選填)", placeholder="https://raw.githubusercontent.com/...")
+    st.caption("留空則讀取本機資料。填寫時請使用指向 JSON 檔案的 Raw URL，而非 GitHub repo 頁面連結。")
 
 # 載入資料
 data = load_knowledge_base(source_url)
